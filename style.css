@@ -109,11 +109,12 @@ body{
     font-family: var(--ff-secondary);
     color: var(--clr-more-transparent-white);
 }
-
-.state__card__img img{
+.state__card-img-container{
+    overflow: hidden;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
-    overflow: hidden;
+}
+.state__card__img img{
     width: 100%;
 }
 
@@ -153,6 +154,11 @@ body{
         width: 100%;
         text-align: center;
         padding: 1rem;
+    }
+    .state__card-img-container{
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+        border-bottom-right-radius: 0;
     }
     .state__card__img img{
         min-height: auto;
